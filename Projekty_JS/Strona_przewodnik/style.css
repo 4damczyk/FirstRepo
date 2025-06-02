@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+body.dark {
+  background-color: #1b171b;
+  color: #f0f0f0;
+}
+
+body.dark header,
+body.dark .naglowek,
+body.dark .atrakcja,
+body.dark section.weather,
+body.dark .comment,
+body.dark .contacts,
+body.dark .socialMediaFooter,
+body.dark .mainFooter,
+body.dark .menu,
+body.dark .drop ul,
+body.dark .atrakcje-header {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+}
+
+body.dark .socialMediaFooter,
+body.dark .mainFooter,
+body.dark footer {
+  background-color: #000;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+body.dark header .naglowek {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+body.dark .menu,
+body.dark .drop ul {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+}
+
+body.dark .czytaj {
+  background-color: #000;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+body.dark .czytaj:hover {
+  background-color: #444;
+}
+
+body.dark .menu a {
+  margin: 0 1rem;
+  text-decoration: none;
+  padding: 1rem 0.5rem;
+  color: white;
+  transition: color 0.3s;
+}
+
+body.dark section.comments {
+  padding: 3rem 1rem;
+  background-color: #1b171b;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  border-top: 1px solid #778899;
+}
+
+body.dark section.contacts {
+  margin: 60px 0;
+  padding: 20px;
+  background-color: #2a2a2a;
+  text-align: center;
+  margin-bottom: 0px;
+  box-sizing: border-box;
+}
+
+body.dark .drop ul li a {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+body.dark footer {
+  background-color: #000;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+body.dark .theme-toggle {
+  background-color: #444;
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  height: 400px;
+  background-image: url("https://media.cntraveler.com/photos/59c02a000d657f738c7e086c/master/w_1920%2Cc_limit/Sveti-Djordje-GettyImages-179057738.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.menu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  background-color: #272B3F;
+  z-index: 999;
+}
+
+.menu a {
+  margin: 0 1rem;
+  text-decoration: none;
+  padding: 1rem 0.5rem;
+  color: white;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #FFD700;
+}
+
+.drop {
+  position: relative;
+}
+
+.drop ul {
+  width: 200px;
+  position: absolute;
+  background: #373C58;
+  list-style-type: none;
+  margin-top: 10px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.25);
+  display: none;
+  overflow: hidden;
+}
+
+.drop ul li {
+  padding: 0.7rem;
+}
+
+.drop ul li a {
+  color: white;
+  display: block;
+}
+
+.drop ul li:hover {
+  background: #272B3F;
+}
+
+.drop a:focus + ul,
+.drop:hover ul {
+  display: block;
+}
+
+header .naglowek {
+  margin-top: 60px;
+  padding: 1rem 2rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+}
+
+header .naglowek h1 {
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+header .naglowek h2 {
+  font-size: 20px;
+  margin-top: 0.5rem;
+}
+
+header .czytaj {
+  background-color: #000;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+header .czytaj:hover {
+  background-color: #444;
+}
+
+section.weather {
+  font-size: 16px;
+  margin: 30px auto;
+  text-align: center;
+  max-width: 600px;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+section.weather img {
+  margin: 10px auto;
+}
+
+section.atrakcje h2 {
+  font-size: 48px;
+  margin: 60px 0 40px;
+  text-align: center;
+  background-color: #000000d6;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.miejsca {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.atrakcje-header {
+  font-size: 48px;
+  margin: 60px 0 40px;
+  text-align: center;
+  background-color: #000000d6;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.atrakcja {
+  max-width: 700px;
+  text-align: center;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.atrakcja img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.czytaj {
+  background-color: #000;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.czytaj:hover {
+  background-color: #444;
+}
+
+section.comments {
+  padding: 3rem 1rem;
+  background-color: #DCDCDC;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  border-top: 1px solid #778899;
+}
+
+.comment {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+section.contacts {
+  margin: 60px 0;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.allContacts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact i {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+footer .Author {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #fff;
+}
+
+.mainFooter {
+  background-color: #000;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.rectangle {
+  width: 0;
+  height: 5px;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+@media (min-width: 576px) {
+  .alltopplaces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
+  .singleplace {
+    width: 48%;
+  }
+}
+
+@media (min-width: 768px) {
+  .allComments,
+  .allContacts {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .singleComment,
+  .singleContact {
+    width: 30%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .aboutAuthor {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .allTopPlaces .singlePlace {
+    width: 24%;
+  }
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #272B3F;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 1001;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #3a3f5e;
+}

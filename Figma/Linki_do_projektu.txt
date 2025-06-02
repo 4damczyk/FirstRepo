@@ -1,0 +1,3 @@
+## Projekt prototypu aplikacji mobilnej wzorowanej na istniejącej stronie "www.egmont.pl":
+
+https://www.figma.com/design/8mMxEd3Pl2GmI0o1z0dEdb/PrototypeEgmont?node-id=0-1&t=fC1umAtZvUZatKhx-1

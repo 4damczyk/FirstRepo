@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MontenegroPL</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/5bf80ba37f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">Tryb ciemny</button>
+    <header>
+
+        <nav class="menu">
+            <div class="drop">
+                <a href="#">Menu</a>
+                <ul>
+                    <li><a href="#budva">Budva</a></li>
+                    <li><a href="#kotor">Kotor</a></li>
+                    <li><a href="#winnica">Plantaže</a></li>
+                    <li><a href="#rafting">Rafting</a></li>
+                    <li><a href="#szkoderskie">Jezioro Szkoderskie</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="#opinie">Opinie</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="naglowek">
+            <h1>Poznaj uroki Czarnogóry</h1>
+            <h2>Najlepszy Polski przewodnik po Czarnogórze!</h2>
+
+        </div>
+      
+
+    </header>
+
+<main>
+    <section class="weather">
+        <h2><i class="fa-solid fa-sun"></i> Sprawdź pogodę w Budvie <i class="fa-solid fa-sun"></i></h2>
+        <div class="weather">
+            <p class="data"></p>
+            <h3 class="cityname"></h3>
+            <div class="temperatureBox">
+                <img src="" alt="" class="imgTemperature">
+                <span class="temperature"></span>
+            </div>
+            <span class="temperatureDescription"></span>
+            <p style="font-size: 25px">Temperatura odczuwalna: <span class="feelsTemperature"></span></p>
+            <p style="font-size: 25px">Wilgotność: <span class="humidity"></span></p>
+            <p style="font-size: 25px">Ciśnienie: <span class="preasure"></span></p>
+            <p style="font-size: 25px">Prędkość wiatru: <span class="windSpeed"></span></p>
+        </div>
+    </section>
+    
+    <section class="atrakcje">
+        <h2 class="atrakcje-header">Zobacz najciekawsze atrakcje Czarnogóry</h2>
+
+        <div class="miejsca">
+            <div style="width: 50%; float: left;" class="atrakcja" id="budva">
+                <a name="BUDVA"></a>
+                <h3>Budva</h3>
+                <img src="https://nawakacje.eu/wp-content/uploads/2019/02/budva-stare-miasto.jpg" alt="">
+                <p>Budva oferuje lśniące morze, masę atrakcji turystycznych, jak i wieczorową rozrywkę w licznych klubach z muzyką na żywo. Jednocześnie Budva to także urocza starówka, mnóstwo wąskich uliczek pośród niskich kamienic i piękny krajobraz. Jest to jedno z najczęściej wybieranych miast w celach wypoczynkowych w całej Czarnogórze. Jeżeli szukacie hotelu/noclegu z którego będziecie zwiedzać Czarnogórę, bardzo polecamy to miasto. Bardzo łatwo dojechać z niego </p>
+                <br><a href="https://www.podrozepoeuropie.pl/budva-zwiedzanie/" class="czytaj">Czytaj więcej</a>
+            </div>
+
+            <div style="width: 50%; float: left;" class="atrakcja" id="kotor">
+                <a name="KOTOR"></a>
+                <h3>Kotor</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Vista_de_Kotor%2C_Bah%C3%ADa_de_Kotor%2C_Montenegro%2C_2014-04-19%2C_DD_14.JPG/1920px-Vista_de_Kotor%2C_Bah%C3%ADa_de_Kotor%2C_Montenegro%2C_2014-04-19%2C_DD_14.JPG" alt="">
+                <p>Kotor, położony u podnóża urwiska, otoczony surowymi górami przybrzeżnymi, z wodą zatoki delikatnie spływającą po jej brzegach, jest główną atrakcją i imiennikiem Zatoki Kotorskiej. Położone w południowo-wschodnim zakątku wewnętrznej zatoki, to cudowne historyczne miasto jest jednym z prawdziwych klejnotów Bałkanów i jednym z najlepszych miejsc do odwiedzenia wiosną w Europie. Kotor przez wielu jest uważany za jedno z najpiękniejszych miejsc na świecie.</p>
+                <br><a href="https://www.podrozepoeuropie.pl/kotor-zwiedzanie/" class="czytaj">Czytaj więcej</a>
+            </div>
+
+            <div style="width: 50%; float: left;" class="atrakcja" id="winnica">
+                <h3>Winnica Plantaže</h3>
+                <img src="https://www.plantaze.com/wp-content/uploads/2019/02/vinogradi_1.jpg" alt="">
+                <p>Czarnogóra słynie z dużej różnorodności dobrej jakości win. Uprawa odbywa się głównie w środkowej i południowej części kraju. Wiele rodzin produkuje własne domowe wina, a w Podgoricy, nad brzegiem rzeki Cem, znajduje się jedna z największych winnic w Europie. Plantaže, znana z najlepszych win czarnogórskich, oferuje interesujące wycieczki degustacyjne po winnicach i piwniczkach. To właśnie stąd pochodzi wino Procorde, czy Krstac.</p>
+                <br><a href="https://www.itinari.com/pl/plantaze-vineyards-and-the-most-famous-montenegrin-wines-86fl" class="czytaj">Czytaj więcej</a>
+            </div>
+
+            <div style="width: 50%; float: left;" class="atrakcja" id="rafting">
+                <h3>Rafting po Tarze</h3>
+                <img src="https://hvala.pl/wp-content/uploads/2021/07/Rafting-w-Czarnogorze-2.jpg" alt="">
+                <p>Rafting po Tarze jest jedną z bardzo popularnych atrakcji w Czarngórze. Biura podróży umiejscowane w Budvie oferują transfer z Budvy aż do samej Tary i rafting po niej w cenie. Bardzo polecamy wycieczki po polsku z hvala.pl , która organizuje wycieczki na rafting do Tary jak i w inne ciekawe miejsca.</p>
+                <br><a href="https://hvala.pl/rafting-w-czarnogorze/" class="czytaj">Czytaj więcej</a>
+            </div>
+
+            <div style="width: 50%; float: left;" class="atrakcja" id="szkoderskie">
+                <h3>Jezioro Szkoderskie</h3>
+                <img src="https://hvala.pl/wp-content/uploads/2021/01/Odkryj-z-nami-wycieczke-jezioro-szkoderskie-13.jpg" alt="">
+                <p>Położone na granicy Albanii i Czarnogóry co roku zachwyca odwiedzających je turystów. Co ciekawe w zależności od pory roku poziom wód w jeziorze ulega zmianie.Kiedy nadchodzi lato i wysokie temperatury, a do tego jest brak deszczu, jezioro ukazuje się nam w swojej nieco łagodniejszej wersji i zachęca do wypłynięcia. Poza pięknymi widokami, kusi nas swoją przyrodą. Jego awifauna to około 300 gatunków ptaków (połowa wszystkich gatunków w Europie), a karpie, który w nim mieszkają ważą ponad 30, a nawet 40 kilogramów.</p>
+                <br><a href="https://hvala.pl/wycieczka-jezioro-szkoderskie/" class="czytaj">Czytaj więcej</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="comments" id="opinie">
+        <h2>Mówią o nas:</h2>
+        <div class="allComments">
+            <div class="comment">
+                <p class="commentText">Świetny przewodnik po tym bardzo niedoceniany kraju, który oferuje niesamowite wspomnienia, krajobrazy i wiele atrakcji.</p>
+                <br/><p class="commentAuthor">~Grzegorz Stasiak, Gazeta Wyborcza</p>
+            </div>
+            <div class="comment">
+                <p class="commentText"> Świetna strona informacyjna na temat Czarnogóry. Pokazująca najciekawsze miejsca, które warto odwiedzić wybierając sie do tego pięknego kraju.</p>
+                <br/><p class="commentAuthor">~Łukasz Kamczak, Dziennik Bałtycki</p>
+            </div>
+            <div class="comment">
+                <p class="commentText"> Dzięki tej stronie dowiedziałem się, do jakiego miejsca najlepiej pojechać podczas wyjazdu i przy okazji dowiedziałem się od razu jaka panuje tam pogoda!
+                </p>
+                <br/><p class="commentAuthor">~Piotrek Łazik, Wirtualna Polska</p>
+            </div>
+
+        </div>
+    </section>
+    <section class="contacts">
+
+        <h2>Kontakt:</h2><br>
+        <div class="allContacts" id="kontakt">
+            <div class="contact">
+                <div class="contactIcon">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <div class="contactdescription">
+                    Gdynia ul.Podróżna 10
+                </div>
+            </div>
+
+            <div class="contact">
+                <div class="contactIcon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contactdescription">
+                    MontenegroPL@wp.pl
+                </div>
+            </div>
+
+            <div class="contact">
+                <div  class="contacticon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contactdescription">
+                    505-133-780
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer class="socialMediaFooter">
+    <div class="socialMedia">
+        <p>Obserwuj nas na:</p>
+        <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+</footer>
+
+<footer class="mainFooter">
+    <div class="Author">
+        <p>Autor: Jakub Adamczyk</p>
+    </div>
+</footer>
+
+<div class="rectangle"></div>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+<script src="main.js"></script>
+</body>
+
+</html>
