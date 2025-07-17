@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const gdynia_shop_1 = require("./gdynia-shop");
+const gdansk_shop_1 = require("./gdansk-shop");
+const MarketGdynia = new gdynia_shop_1.GdyniaShop(true, 'Franciszek Mostkowiak');
+const MarketGdansk = new gdansk_shop_1.GdanskShop(true, 'Karolina Grabowska');
+MarketGdynia.addAddress('Limbowa 4, Gdynia');
+MarketGdynia.addOwner('Kamila Baranowska');
+MarketGdansk.addAddress('Wierzbowa 11, Gdansk');
+MarketGdansk.addAddress('Jan Kowalski');
